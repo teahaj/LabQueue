@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab Queue - Join</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial; margin: 24px; }
+    input[type="number"]{ padding:8px; width:140px }
+    button{ padding:8px 12px }
+    .card{ border:1px solid #ddd; padding:12px; margin-top:12px; border-radius:6px }
+  </style>
+</head>
+<body>
+  <h1>Lab Queue - Student</h1>
+  <p>Enter your numeric ID to join the queue:</p>
+  <form id="joinForm">
+    <input id="studentId" type="number" placeholder="12345" required />
+    <button type="submit">Join Queue</button>
+  </form>
+
+  <div class="card">
+    <h3>Next</h3>
+    <div id="next">(none)</div>
+  </div>
+
+  <div class="card">
+    <h3>Others in queue</h3>
+    <ol id="rest"></ol>
+  </div>
+
+  <p><a href="/instructor">Instructor view</a></p>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
